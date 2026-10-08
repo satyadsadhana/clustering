@@ -14,6 +14,7 @@ Kumpulan notebook untuk persiapan UTS Data Mining II menggunakan K-Means.
 2. Install library yang diperlukan sesuai petunjuk di notebook.
 3. Pilih satu bagian input di awal notebook dan hapus bagian input yang tidak dipakai sebelum Run All.
    Khusus Image, Digits sudah aktif. Untuk data sendiri, nonaktifkan cell Digits lalu hapus tanda komentar pada satu loader folder/ZIP/NPZ.
+   Setiap loader Image menyediakan opsi semua data (aktif) atau sampling acak. Untuk sampling, komentari opsi 1 dan aktifkan opsi 2; ubah jumlah `5000` sesuai kebutuhan.
 4. Sesuaikan lokasi dataset, nama kolom jika diperlukan, dan nilai k.
 5. Ikuti petunjuk di notebook dan jalankan cell secara berurutan. Input folder dan ZIP juga mencakup subfolder.
 
@@ -25,6 +26,6 @@ Kumpulan notebook untuk persiapan UTS Data Mining II menggunakan K-Means.
 | Audio / Signal | `x_train`: sinyal 128 titik; `y_train`, `sample_rate_hz`, `time_seconds`, dan `class_names` sesuai dataset latihan |
 | Text | `texts`: array teks mentah satu dimensi bertipe Unicode; ganti nama key jika berbeda |
 
-Setiap bagian NPZ mencetak nama array agar bisa diperiksa. Contoh Image memakai maksimal 5.000 data train dan Signal 2.000; ubah `n` sesuai kebutuhan. Data test tetap terpisah dan label tidak dimasukkan ke fitur clustering.
+Setiap bagian NPZ mencetak nama array agar bisa diperiksa. Image memakai semua data train secara default, dengan opsi sampling acak 5.000 gambar. Signal memakai maksimal 2.000 data train; ubah `n` sesuai kebutuhan. Data test tetap terpisah dan label tidak dimasukkan ke fitur clustering.
 
 NPZ Signal mempertahankan sampling 128 Hz dan memakai nilai amplitudo sebagai fitur, lalu langsung ke standardisasi. Ikuti petunjuk bagian yang perlu dihapus pada setiap notebook sebelum Run All.
