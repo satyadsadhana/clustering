@@ -12,5 +12,5 @@ Kumpulan notebook untuk persiapan UTS Data Mining II menggunakan K-Means.
 
 1. Buka notebook di Google Colab atau Jupyter Notebook.
 2. Install library yang diperlukan sesuai petunjuk di notebook.
-3. Pilih satu chunk loading, hapus alternatif lainnya, lalu sesuaikan dataset dan konfigurasi.
+3. Sesuaikan lokasi dataset, nama kolom jika diperlukan, dan konfigurasi.
 4. Ikuti petunjuk di notebook dan jalankan cell secara berurutan.
